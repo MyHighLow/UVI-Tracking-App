@@ -8,14 +8,15 @@
       "preview2": {
         "android": {
           "gradleCommand": ":app:assembleRelease"
-        }
+        },
+        "distribution": "internal"
       },
       "preview3": {
         "developmentClient": true,
         "distribution": "internal"
       },
       "production": {}
-      
+
     }
   }
   
