@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
     color: "black",
   },
   uvIndexContainer: {
+    flexDirection: "row",
     height: 100,
     width: 100,
     borderRadius: 50,
@@ -115,6 +116,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   uvIndexText: {
+    textAlign: "center",
     fontSize: 25,
     marginTop: 15,
   },
