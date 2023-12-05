@@ -5,10 +5,12 @@ import {
     Text,
     TouchableOpacity,
     View,
+    StatusBar,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import DeviceModal from "./DeviceConnectionsModal";
 import useBLE from "./useBLE";
+
 
 const App = () => {
     const {
@@ -63,6 +65,7 @@ const App = () => {
         }
         return arrayOfColors[indexNumber];
     };
+
     const getPosition = (indexStr: string): number => {
         if (indexStr === "10" || indexStr === "11" || indexStr === "12") {
             return 354;
@@ -73,6 +76,11 @@ const App = () => {
 
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar
+                animated={true}
+                backgroundColor="#d3d3d3"
+                barStyle="dark-content"
+            />
             <View style={styles.uvIndexTitleWrapper}>
                 {connectedDevice ? (
                     <View style={styles.uvIndexView}>
@@ -217,6 +225,7 @@ const App = () => {
                     </Text>
                 )}
             </View>
+
             <TouchableOpacity
                 onPress={connectedDevice ? disconnectFromDevice : openModal}
                 style={styles.ctaButton}
@@ -238,6 +247,7 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: "#d3d3d3",
     },
     uvIndexTitleWrapper: {
         flex: 1,
@@ -297,7 +307,7 @@ const styles = StyleSheet.create({
         top: 200,
     },
     ctaButton: {
-        backgroundColor: "#005b96",
+        backgroundColor: "#3c4142",
         justifyContent: "center",
         alignItems: "center",
         height: 50,
