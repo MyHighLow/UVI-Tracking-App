@@ -1,6 +1,7 @@
+import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const uvScale = () => {
+const UVScale = () => {
     return (
         <View style={styles.uvScale}>
             <View
@@ -146,4 +147,4 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
 });
-export default uvScale;
+export default UVScale;

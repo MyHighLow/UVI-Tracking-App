@@ -10,6 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import DeviceModal from "./DeviceConnectionsModal";
 import useBLE from "./useBLE";
+import UVScale from "./components/uvScale";
 
 
 const App = () => {
@@ -93,123 +94,7 @@ const App = () => {
                         >
                             <Text style={styles.uvIndexText}>{uvIndex}</Text>
                         </View>
-                        <View style={styles.uvSlider}>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "green",
-                                        borderTopLeftRadius: 8,
-                                        borderBottomLeftRadius: 8,
-                                        borderLeftWidth: 2,
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>0</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "green",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>1</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "green",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>2</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "yellow",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>3</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "yellow",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>4</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "yellow",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>5</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "orange",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>6</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "orange",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>7</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "red",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>8</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "red",
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>9</Text>
-                            </View>
-                            <View
-                                style={[
-                                    styles.uvSliderSection,
-                                    {
-                                        backgroundColor: "red",
-                                        borderTopRightRadius: 8,
-                                        borderBottomRightRadius: 8,
-                                    },
-                                ]}
-                            >
-                                <Text style={styles.uvSliderText}>10+</Text>
-                            </View>
-                        </View>
+                        <UVScale />
                         <View
                             style={[
                                 styles.arrowView,
@@ -278,28 +163,6 @@ const styles = StyleSheet.create({
     uvIndexText: {
         textAlign: "center",
         fontSize: 25,
-        fontWeight: "bold",
-    },
-    uvSlider: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "stretch",
-        width: "75%",
-        marginVertical: 20,
-    },
-    uvSliderSection: {
-        height: 50,
-        width: 35,
-        borderColor: "black",
-        borderBottomWidth: 2,
-        borderTopWidth: 2,
-        borderEndWidth: 2,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    uvSliderText: {
-        textAlign: "center",
-        fontSize: 15,
         fontWeight: "bold",
     },
     arrowView: {
