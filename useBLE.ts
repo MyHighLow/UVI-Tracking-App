@@ -169,6 +169,7 @@ function useBLE(): BluetoothLowEnergyApi {
                 UUID16_CHR_UV_INDEX,
                 onUVIndexUpdate
             );
+            // device.writeCharacteristicWithResponseForService('12ab', '34cd', 'aGVsbG8gbWlzcyB0YXBweQ==') // write to characteristic
         } else {
             console.log("No Device Connected");
         }
