@@ -81,7 +81,7 @@ const DeviceModal: FC<DeviceModalProps> = (props) => {
 const modalStyle = StyleSheet.create({
   modalContainer: {
     flex: 1,
-    backgroundColor: "#d3d3d3",
+    backgroundColor: "#ffffff",
   },
   modalFlatlistContiner: {
     flex: 1,
@@ -97,7 +97,7 @@ const modalStyle = StyleSheet.create({
   },
   modalTitle: {
     flex: 1,
-    backgroundColor: "#d3d3d3",
+    backgroundColor: "#ffffff",
   },
   modalTitleText: {
     marginTop: 40,
@@ -107,7 +107,7 @@ const modalStyle = StyleSheet.create({
     textAlign: "center",
   },
   ctaButton: {
-    backgroundColor: "#3c4142",
+    backgroundColor: "#ffffff",
     justifyContent: "center",
     alignItems: "center",
     height: 50,
