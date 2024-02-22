@@ -17,7 +17,8 @@
           ],
           "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
         }
-      ]
+      ],
+      "react-native-ble-plx"
     ],
     "splash": {
       "image": "./assets/icon.png",
