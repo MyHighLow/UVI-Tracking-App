@@ -10,7 +10,7 @@ import {
 export default function UVInfoScreen() {
     return (
         <SafeAreaView style={styles.container}>
-            <Text>UVInfoScreen</Text>
+            <View ></View>
         </SafeAreaView>
     );
 }

@@ -24,7 +24,8 @@ export default function App(){
             <BottomTab.Navigator
                 screenOptions={{
                     headerStyle: { backgroundColor: "white" },
-                    headerTintColor: "white",
+                    headerTitleAlign: "center",
+                    headerTintColor: "black",
                     tabBarStyle: {
                         backgroundColor: "white"
                     },
@@ -42,7 +43,7 @@ export default function App(){
                     }}
                 />
                 <BottomTab.Screen
-                    name="Details"
+                    name="About"
                     component={UVInfoScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (

@@ -8,7 +8,7 @@ import {
     StatusBar,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import DeviceModal from "../DeviceConnectionsModal";
+import DeviceModal from "../components/DeviceConnectionsModal";
 import useBLE from "../useBLE";
 import UVScale from "../components/uvScale";
 

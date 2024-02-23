@@ -113,7 +113,7 @@ function useBLE(): BluetoothLowEnergyApi {
     const connectToDevice = async (device: Device) => {
         try {
             const deviceConnection = await bleManager.connectToDevice(
-                device.id, { autoConnect: true }
+                device.id, /**{ autoConnect: true }**/
             );
             setConnectedDevice(deviceConnection);
             await deviceConnection.discoverAllServicesAndCharacteristics();
