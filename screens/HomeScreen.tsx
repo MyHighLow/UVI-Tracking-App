@@ -79,11 +79,7 @@ const App = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar
-                animated={true}
-                backgroundColor="#ffffff"
-                barStyle="light-content"
-            />
+            
             <View style={styles.uvIndexTitleWrapper}>
                 {connectedDevice ? (
                     <View style={styles.uvIndexView}>
@@ -134,7 +130,7 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "white",
+        backgroundColor: Colors.primary300,
     },
     uvIndexTitleWrapper: {
         flex: 1,
@@ -172,18 +168,18 @@ const styles = StyleSheet.create({
         top: 200,
     },
     ctaButton: {
-        backgroundColor: Colors.primary200,
+        backgroundColor: Colors.primary100,
         justifyContent: "center",
         alignItems: "center",
         height: 50,
         marginHorizontal: 20,
-        marginBottom: 5,
+        marginBottom: 50,
         borderRadius: 8,
     },
     ctaButtonText: {
         fontSize: 18,
         fontWeight: "bold",
-        color: "white",
+        color: Colors.primary300,
     },
 });
 

@@ -43,12 +43,11 @@ export default function UVInfoScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "white",
+        backgroundColor: Colors.primary300,
         alignItems: "center",
         justifyContent: "center",
     },
     scrollView: {
-        backgroundColor: "white",
     },
     sectionText: {
         fontSize: 24,

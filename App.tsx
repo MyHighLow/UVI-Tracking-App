@@ -22,16 +22,21 @@ const BottomTab = createBottomTabNavigator();
 export default function App(){
     return (
         <NavigationContainer>
+            <StatusBar
+                animated={true}
+                backgroundColor={Colors.primary100}
+                barStyle="light-content"
+            />
             <BottomTab.Navigator
                 screenOptions={{
-                    headerStyle: { backgroundColor: "white" },
+                    headerStyle: { backgroundColor: Colors.primary100 },
                     headerTitleAlign: "center",
-                    headerTintColor: "black",
+                    headerTintColor: Colors.primary300,
                     tabBarStyle: {
-                        backgroundColor: Colors.primary300
+                        backgroundColor: Colors.primary100
                     },
                     tabBarActiveTintColor: Colors.primary500,
-                    tabBarInactiveTintColor: Colors.primary100,
+                    tabBarInactiveTintColor: Colors.primary300,
                 }}
             >
                 <BottomTab.Screen
