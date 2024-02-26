@@ -8,6 +8,8 @@ import {
     StatusBar,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+
+import Colors from "../constants/colors";
 import DeviceModal from "../components/DeviceConnectionsModal";
 import useBLE from "../useBLE";
 import UVScale from "../components/uvScale";
@@ -132,7 +134,7 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "0xffffff",
+        backgroundColor: "white",
     },
     uvIndexTitleWrapper: {
         flex: 1,
@@ -170,7 +172,7 @@ const styles = StyleSheet.create({
         top: 200,
     },
     ctaButton: {
-        backgroundColor: "#3c4142",
+        backgroundColor: Colors.primary200,
         justifyContent: "center",
         alignItems: "center",
         height: 50,

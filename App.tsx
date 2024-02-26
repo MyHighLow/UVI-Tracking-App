@@ -13,6 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
+import Colors from "./constants/colors";
 import HomeScreen from "./screens/HomeScreen";
 import UVInfoScreen from "./screens/UVInfoScreen";
 
@@ -27,10 +28,10 @@ export default function App(){
                     headerTitleAlign: "center",
                     headerTintColor: "black",
                     tabBarStyle: {
-                        backgroundColor: "white"
+                        backgroundColor: Colors.primary300
                     },
-                    tabBarActiveTintColor: "blue",
-                    tabBarInactiveTintColor: "black",
+                    tabBarActiveTintColor: Colors.primary500,
+                    tabBarInactiveTintColor: Colors.primary100,
                 }}
             >
                 <BottomTab.Screen

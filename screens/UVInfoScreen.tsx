@@ -7,6 +7,8 @@ import {
     StatusBar,
 } from "react-native";
 
+import Colors from "../constants/colors";
+
 export default function UVInfoScreen() {
     return (
         <SafeAreaView style={styles.container}>
@@ -18,7 +20,7 @@ export default function UVInfoScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "white",
         alignItems: "center",
         justifyContent: "center",
     },

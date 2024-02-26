@@ -10,6 +10,8 @@ import {
 } from "react-native";
 import { Device } from "react-native-ble-plx";
 
+import Colors from "../constants/colors";
+
 type DeviceModalListItemProps = {
   item: ListRenderItemInfo<Device>;
   connectToPeripheral: (device: Device) => void;
@@ -107,7 +109,7 @@ const modalStyle = StyleSheet.create({
     textAlign: "center",
   },
   ctaButton: {
-    backgroundColor: "#6B6B6B",
+    backgroundColor: Colors.primary200,
     justifyContent: "center",
     alignItems: "center",
     height: 50,
