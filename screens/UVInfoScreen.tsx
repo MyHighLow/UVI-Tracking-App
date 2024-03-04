@@ -1,3 +1,7 @@
+/** Make info more user friendly and easy to read add chart to display what numbers and colors mean 
+ * maybe add info like burn time, protection methods and harm levels
+ */
+
 import {
     SafeAreaView,
     ScrollView,
