@@ -17,29 +17,56 @@ import Colors from "../constants/colors";
 export default function UVInfoScreen() {
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView style={styles.scrollView}>
-                <Text style={styles.sectionText}>What is UV Index?</Text>
-                <Text style={styles.paragraph}>
-                    The UV Index is a measure of the strength of the sun's ultraviolet (UV) rays. It is a
-                    scale primarily used in daily forecasts aimed at the general public. The UV Index scale
-                    was developed by Canadian scientists in 1992, and then adopted and standardized by the
-                    United Nations World Health Organization and World Meteorological Organization in 1994.
-                </Text>
-                <Text style={styles.paragraph}>
-                    The UV Index is a useful tool for sun protection and is increasingly used to inform the public
-                    about the daily UV levels. It is also used to inform the public about the need to use sun
-                    protection and sunburn prevention measures, such as sunscreen, hats, protective clothing,
-                    sunglasses, and shade.
-                </Text>
-                <Text style={styles.paragraph}>
-                    The UV Index is a linear scale, with higher values representing a greater risk of harm from
-                    unprotected sun exposure. A UV Index reading of 0 to 2 means low danger from the sun's UV rays
-                    for the average person. A UV Index reading of 3 to 5 means moderate risk of harm from unprotected
-                    sun exposure. A UV Index reading of 6 to 7 means high risk of harm from unprotected sun exposure.
-                    A UV Index reading of 8 to 10 means very high risk of harm from unprotected sun exposure. A UV
-                    Index reading of 11 or more means extreme risk of harm from unprotected sun exposure.
-                </Text>
-            </ScrollView>
+                <View style={styles.UVView}>
+                    <View style={styles.aboutView}>
+                        <View style={[styles.indexView,{backgroundColor: "green"}]}>
+                            <Text style={styles.aboutText}>
+                                0-2
+                            </Text>
+                        </View>
+                        <View style={styles.infoView}>
+                                <Text style={styles.aboutText}>
+                                Safe
+                            </Text>
+                        </View>
+                    </View>
+                    <View style={styles.aboutView}>
+                        <View style={[styles.indexView,{backgroundColor: "yellow"}]}>
+                            <Text style={styles.aboutText}>
+                                3-5
+                            </Text>
+                        </View>
+                        <View style={styles.infoView}>
+                            <Text style={styles.aboutText}>
+                                Moderate
+                            </Text>
+                        </View>
+                    </View>
+                    <View style={styles.aboutView}>
+                        <View style={[styles.indexView,{backgroundColor: "orange"}]}>
+                            <Text style={styles.aboutText}>
+                                6-7
+                            </Text>
+                        </View>
+                        <View style={styles.infoView}>
+                            <Text style={styles.aboutText}>
+                                High
+                            </Text>
+                        </View>
+                    </View>
+                    <View style={styles.aboutView}>
+                        <View style={[styles.indexView,{backgroundColor: "red"}]}>
+                            <Text style={styles.aboutText}>
+                                8-10
+                            </Text>
+                        </View>
+                        <View style={styles.infoView}>
+                            <Text style={styles.aboutText}>
+                                Very High
+                            </Text>
+                        </View>
+                    </View>
+                </View>
         </SafeAreaView>
     );
 }
@@ -51,15 +78,48 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
-    scrollView: {
+    UVView: {
+        flex: 1,
+        width: "90%",
+        paddingVertical: "5%",
+        alignItems: "center",
+        justifyContent: "center",
+        borderColor: "red",
+        borderWidth: 2,
     },
-    sectionText: {
-        fontSize: 24,
+    aboutView: {
+        flex: 1,
+        width: "100%",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        borderColor: "green",
+        borderWidth: 2,
+    },
+    indexView: {
+        flex: 1,
+        width:"50%",
+        height: "50%",
+        borderColor: "black",
+        borderWidth: 2,
+        
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 10,
+    },
+    infoView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        width: "50%",
+        height: "50%",
+        marginLeft: "2%",
+        borderColor: "black",
+        borderWidth: 2,
+        borderRadius: 10,
+    },
+    aboutText: {
         fontWeight: "bold",
-        margin: 20,
-    },
-    paragraph: {
-        fontSize: 16,
-        margin: 20,
+        fontSize: 20,
     },
 });
