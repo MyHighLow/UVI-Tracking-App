@@ -3,21 +3,21 @@
 # Instructions
 ## Getting All Setup
 Before you can build the project, some preparation needs to be done.
-**1.** Install [node.js](https://nodejs.org/en)
-**2.** Create an [expo.dev](https://expo.dev/) account
-**3.** Globally install expo-cli package via powershell
+1. Install [node.js](https://nodejs.org/en)
+1. Create an [expo.dev](https://expo.dev/) account
+3. Globally install expo-cli package via powershell
 >npm install -g expo-cli
 
-**4.** Login to EAS via powershell
+4. Login to EAS via powershell
 >eas login
 
 OR
 >npx eas login
 
-**5.** Clone this repository
+5. Clone this repository
 >git clone git@github.com:MyHighLow/UVI-Tracking-App.git
 
-**6.** Install node packages
+6. Install node packages
 >cd UVI-Tracking-App
 >npm install
 
