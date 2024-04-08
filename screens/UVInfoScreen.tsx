@@ -84,8 +84,6 @@ const styles = StyleSheet.create({
         paddingVertical: "5%",
         alignItems: "center",
         justifyContent: "center",
-        borderColor: "red",
-        borderWidth: 2,
     },
     aboutView: {
         flex: 1,
@@ -93,8 +91,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        borderColor: "green",
-        borderWidth: 2,
     },
     indexView: {
         flex: 1,
