@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "UV Index Tracker",
+    "name": "SafeSun",
     "slug": "expo-ble-sample",
     "version": "1.0.0",
+    "owner": "ece492-494",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
