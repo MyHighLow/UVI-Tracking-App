@@ -22,6 +22,10 @@ Before you can build the project, some preparation needs to be done.
 
       git clone git@github.com:MyHighLow/UVI-Tracking-App.git
 
+- SIDE NOTE: If you are having trouble with pushing commits because it would "expose your email", you can hide your email with this configuration
+
+      git config --local user.email "<>"
+
 - Install node packages
 
       cd UVI-Tracking-App
