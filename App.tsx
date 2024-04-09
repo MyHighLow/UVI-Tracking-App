@@ -16,6 +16,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Colors from "./constants/colors";
 import HomeScreen from "./screens/HomeScreen";
 import UVInfoScreen from "./screens/UVInfoScreen";
+import DebugScreen from "./screens/DebugScreen";
 
 const BottomTab = createBottomTabNavigator();
 
@@ -54,6 +55,15 @@ export default function App(){
                     options={{
                         tabBarIcon: ({ color, size }) => (
                             <Ionicons name="list" color={color} size={size} />
+                        ),
+                    }}
+                />
+                <BottomTab.Screen
+                    name="Debug"
+                    component={DebugScreen}
+                    options={{
+                        tabBarIcon: ({ color, size }) => (
+                            <Ionicons name="bug-outline" color={color} size={size} />
                         ),
                     }}
                 />
