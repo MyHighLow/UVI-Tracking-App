@@ -1,15 +1,6 @@
 import React, { useState } from "react";
-import {
-    SafeAreaView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    StatusBar,
-} from "react-native";
-
+import {SafeAreaView, StyleSheet, Text, TouchableOpacity, View, StatusBar, ScrollView, } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
@@ -17,6 +8,8 @@ import Colors from "./constants/colors";
 import HomeScreen from "./screens/HomeScreen";
 import UVInfoScreen from "./screens/UVInfoScreen";
 import DebugScreen from "./screens/DebugScreen";
+
+import { BarChart, LineChart, PieChart, PopulationPyramid } from "react-native-gifted-charts";
 
 const BottomTab = createBottomTabNavigator();
 
