@@ -9,8 +9,6 @@ import {
 } from "react-native";
 
 import Colors from "../constants/colors";
-import { BarChart, LineChart, PieChart, PopulationPyramid } from "react-native-gifted-charts";
-// import {LineChart} from 'react-native-charts-wrapper';
 
 export default function DebugScreen() {
     const data=[ {value:50}, {value:80}, {value:90}, {value:70} ];
@@ -21,8 +19,6 @@ export default function DebugScreen() {
                 <Text style={styles.aboutText}>DEBUG</Text>
                 <View style={{flex: 1}}>
                     <View style={styles.container}>
-                    {/* <LineChart data={{dataSets:[{label: "demo", values: [{y: 1}, {y: 2}, {y: 1}]}]}} /> */}
-                    <BarChart data = {data} />
                     </View>
                 </View>
             </ScrollView>
