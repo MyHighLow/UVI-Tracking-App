@@ -1,76 +1,39 @@
-import {
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-    StatusBar,
-} from "react-native";
-
+import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View, StatusBar,} from "react-native"; 
+import  Svg, { Circle, Ellipse, G, TSpan, TextPath, Path, Polygon, Polyline, Line, Rect, Use, Image, Symbol, Defs, LinearGradient, RadialGradient, Stop, ClipPath, Pattern, Mask, } from 'react-native-svg';
 import Colors from "../constants/colors";
+import BarGraph from '../components/BarGraph';
 
 export default function DebugScreen() {
-    const data=[ {value:50}, {value:80}, {value:90}, {value:70} ];
-
+    const dataArray1 = [
+        {value: 200, legend: '', },
+        {value: 300, legend: '', },
+        {value: 700, legend: '', },
+        {value: 500, legend: '', },
+      ];
     return (
-        <SafeAreaView style={styles.container}>
-            <ScrollView>
+        <SafeAreaView>
                 <Text style={styles.aboutText}>DEBUG</Text>
-                <View style={{flex: 1}}>
-                    <View style={styles.container}>
-                    </View>
+                <View style={{
+                    width: "75%",
+                    height: "50%",
+                }}>
+                    <BarGraph dataArray={dataArray1}/>
                 </View>
-            </ScrollView>
         </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: Colors.primary300,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    UVView: {
-        flex: 1,
-        width: "90%",
-        paddingVertical: "5%",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    aboutView: {
-        flex: 1,
-        width: "100%",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    indexView: {
-        flex: 1,
-        width:"50%",
-        height: "50%",
-        borderColor: "black",
-        borderWidth: 2,
-        
-        alignItems: "center",
-        justifyContent: "center",
-        borderRadius: 10,
-    },
-    infoView: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        width: "50%",
-        height: "50%",
-        marginLeft: "2%",
-        borderColor: "black",
-        borderWidth: 2,
-        borderRadius: 10,
+        width: '50%', // Set the width of the container to 50% of its parent's width
+        height: 200, // Set a fixed height for the container
+        borderWidth: 1,
+        borderColor: 'black',
+        borderStyle: 'solid',
     },
     aboutText: {
         fontWeight: "bold",
         fontSize: 40,
     },
+
 });
