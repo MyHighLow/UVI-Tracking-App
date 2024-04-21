@@ -13,7 +13,8 @@ export default function BarItem(props : Props) {
       backgroundColor: "#F53",
       borderWidth: 1,
       borderColor: "white",
-      borderStyle:"solid"
+      borderStyle:"solid",
+      justifyContent: "flex-end",
     }}>
     <Text style={styles.legend}>{props.legend}</Text>
   </View>;
@@ -22,7 +23,9 @@ export default function BarItem(props : Props) {
 const styles = StyleSheet.create({
 
   legend : {
-    textAlign: "center"
+    fontWeight: "bold",
+    textAlign: "center",
+    justifyContent: "flex-start"
   },
 
 });
