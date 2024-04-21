@@ -2,10 +2,11 @@ import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View, Sta
 import  Svg, { Circle, Ellipse, G, TSpan, TextPath, Path, Polygon, Polyline, Line, Rect, Use, Image, Symbol, Defs, LinearGradient, RadialGradient, Stop, ClipPath, Pattern, Mask, } from 'react-native-svg';
 import Colors from "../constants/colors";
 import BarGraph from '../components/BarGraph';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function DebugScreen() {
-    const dataArray1 = [
+    let dataArray1 = [
         {value: 0, legend: ""},
         {value: 4, legend: ""},
         {value: 4, legend: ""},
@@ -31,6 +32,15 @@ export default function DebugScreen() {
         {value: 0, legend: ""},
         {value: 0, legend: ""}
       ];
+
+    if (getObject("year") === null) {
+        storeTestData();
+    };
+
+    // dataArray1 = getObject("week").data;
+
+    console.log(getObject("week"));
+
     return (
         <SafeAreaView style={{borderWidth:1, borderColor:"black", borderStyle:"solid"}}>
                 <Text style={styles.aboutText}>DEBUG</Text>
