@@ -10,7 +10,7 @@ export default function BarItem(props : Props) {
   return <View style={{
       flex:1,
       height: props.barPercentage,
-      backgroundColor: "#FA3",
+      backgroundColor: "#F53",
       borderWidth: 1,
       borderColor: "white",
       borderStyle:"solid"
