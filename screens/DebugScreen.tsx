@@ -11,11 +11,12 @@ export default function DebugScreen() {
         {value: 500, legend: '', },
       ];
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{borderWidth:1, borderColor:"black", borderStyle:"solid"}}>
                 <Text style={styles.aboutText}>DEBUG</Text>
                 <View style={{
                     width: "75%",
                     height: "50%",
+                    alignSelf: "center"
                 }}>
                     <BarGraph dataArray={dataArray1}/>
                 </View>
