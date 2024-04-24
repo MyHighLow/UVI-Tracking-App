@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView} from 'react-native';
 export type Props = {
   legend: string;
   barPercentage: string;
+  value: number;
 };
 
 let generateStyle = function(props : Props) {
@@ -25,12 +26,18 @@ let generateStyle = function(props : Props) {
 
 export default function BarItem(props : Props) {
   return <View style={generateStyle(props)}>
+    <Text style={styles.valueText}>{props.value}</Text>
     <Text style={styles.legend}>{props.legend}</Text>
   </View>;
 };
 
 const styles = StyleSheet.create({
   legend : {
+    fontWeight: "bold",
+    textAlign: "center",
+    justifyContent: "flex-start"
+  },
+  valueText : {
     fontWeight: "bold",
     textAlign: "center",
     justifyContent: "flex-start"

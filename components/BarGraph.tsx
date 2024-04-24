@@ -23,6 +23,7 @@ export default function BarGraph({dataArray} : Props) {
         return dataArray.map((item) => ({
           legend: item.legend,
           barPercentage: `${Math.round((item.value / highestValue) * 100)}%`,
+          value: item.value
         }));
       }, [dataArray]);
 
@@ -35,6 +36,7 @@ export default function BarGraph({dataArray} : Props) {
             key={idx}
             legend={barItem.legend}
             barPercentage={barItem.barPercentage}
+            value={barItem.value}
           />
         ))}
       </View>

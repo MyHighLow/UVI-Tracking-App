@@ -175,8 +175,6 @@ let getDataArray = function(scope : string) {
   return jsd.data;
 };
 
-
-
 const styles = StyleSheet.create({
     container: {
       flex: 1,
