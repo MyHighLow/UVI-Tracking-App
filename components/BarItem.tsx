@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View, ScrollView} from 'react-native';
 
-
 export type Props = {
   legend: string;
   barPercentage: string;
@@ -31,11 +30,9 @@ export default function BarItem(props : Props) {
 };
 
 const styles = StyleSheet.create({
-
   legend : {
     fontWeight: "bold",
     textAlign: "center",
     justifyContent: "flex-start"
   },
-
 });
